@@ -1,0 +1,67 @@
+package exe2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Empregado {
+	
+	private String ID;
+	private String nome;
+	
+	public Empregado(String ID, String nome) {
+		this.ID = ID;
+		this.nome = nome;
+	}
+	
+	//criei pra fazer o teste da letra a) e não consigo mapear um objeto sem o atributo definido;
+//	public Empregado() {};
+	public String getID() {
+		return ID;
+	}
+	public void setID(String iD) {
+		ID = iD;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		Empregado e = (Empregado)obj;
+		if(this.getID().charAt(0) == 'A') {
+			this.getID().toLowerCase();
+			if(this.getID().equals(e.getID())) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		else {
+			if(this.getID().equals(e.getID())) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+	}
+	
+	@Override
+	public int hashCode() {
+			return this.getID().charAt(0) + this.getID().charAt(1) + this.getID().charAt(2)
+					+ this.getID().charAt(3) + this.getID().charAt(4);
+	}
+	
+	@Override
+	public String toString() {
+		String str = "ID: " + this.getID();
+		str += " Nome: " + this.getNome();
+		return str;
+	}
+	
+	
+
+}

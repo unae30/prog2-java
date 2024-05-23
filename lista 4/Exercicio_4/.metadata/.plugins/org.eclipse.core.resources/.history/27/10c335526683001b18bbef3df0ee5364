@@ -1,0 +1,52 @@
+package ex4;
+import java.util.Scanner;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Faça login: ");
+		System.out.println();
+		Usuario u1 = new Usuario();
+		
+		System.out.println("DIGITE O RESPECTIVO NUMERO PARA: ");
+		System.out.println("--------------------MENU--------------------");
+		System.out.println("-                                          -");
+		System.out.println("- 1:CRIAR POSTAGEM                         -");
+		System.out.println("- 2:ADICIONAR POSTAGEM NO SISTEMA          -");
+		System.out.println("- 3:PUBLICAR POSTAGEM NO BLOG              -");
+		System.out.println("- 4:LISTAR POSTAGENS PUBLICADAS            -");
+		System.out.println("- 5:LISTAR POSTANGENS GRAVADAS NO SISTEMA  -");
+		System.out.println("- 6:APAGAR POSTAGEM DO BLOG                -");
+		System.out.println("------------------FIM MENU------------------");
+		System.out.println();
+		
+		Postagem p1 = new Postagem (u1);
+		System.out.println();
+		Postagem p2  = new Postagem (u1);
+		System.out.println();
+		Postagem p3 = new Postagem(u1);
+		
+		Blog b1 = new Blog(3);
+		
+		b1.adicionarPostagem(p1);
+		b1.adicionarPostagem(p2);
+		b1.adicionarPostagem(p3);
+		b1.publicarPostagem(p1);
+
+		b1.listarPostagensPublicadas();
+		System.out.println();
+		b1.listarTodasAsPostagens();
+		System.out.println();
+		
+		b1.apagarPostagem(p1);
+		
+		b1.listarPostagensPublicadas();
+		System.out.println();
+		b1.listarTodasAsPostagens();
+		System.out.println();
+		
+
+	}
+
+}

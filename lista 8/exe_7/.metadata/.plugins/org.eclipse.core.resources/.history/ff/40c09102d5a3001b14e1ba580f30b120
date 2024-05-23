@@ -1,0 +1,14 @@
+package somador;
+
+public class AdapterSomador extends SomadorExistente {
+	
+	private SomadorEsperado somador;
+	
+	public AdapterSomador(SomadorEsperado somador) {
+		this.somador = somador;
+	}
+	
+	public void SomaLista() {
+		this.somador.
+	}
+}

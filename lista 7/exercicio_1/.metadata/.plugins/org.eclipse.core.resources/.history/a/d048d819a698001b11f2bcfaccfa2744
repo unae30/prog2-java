@@ -1,0 +1,28 @@
+package exe1;
+
+
+public class MétodosAux {
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		String s = (String)obj;
+		if(this) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public int hashCode() {
+		return this.getCpf().charAt(0);
+	}
+	
+	public String toString() {
+		String str = "CPF: " + this.getCpf();
+		str += " Nome: " + this.getNome();
+		str+= " Endererço: " + this.getEndereco();
+		return str;
+	}
+}

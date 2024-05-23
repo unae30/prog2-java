@@ -1,0 +1,18 @@
+package sandubao;
+
+public class Lanchonete extends FabricaAbstrataDeSanduiches{
+
+	@Override
+	public ISanduichesIngredientFactory FactorySanduiche(String nomeLanchonete) {
+		if(nomeLanchonete == null) 
+			return null;
+		else if(nomeLanchonete.equalsIgnoreCase("Lanchonete CG"))
+			return new SanduichesIngredientFactoryCG();
+		else if(nomeLanchonete.equalsIgnoreCase("Lanchonete JP"))
+			return new SanduichesIngredientFactoryJP();
+		else if(nomeLanchonete.equalsIgnoreCase("Lanchonete RT"))
+			return new SanduichesIngredientFactoryRT();
+		else
+			return null;
+	}	
+}

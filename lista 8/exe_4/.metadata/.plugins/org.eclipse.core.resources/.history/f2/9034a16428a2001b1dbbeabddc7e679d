@@ -1,0 +1,17 @@
+package lanchonete;
+
+public class Sanduiches {
+	
+	private String ingrediente1;
+	private String ingrediente2;
+	private String ingrediente3;
+	private String ingrediente4;
+	
+	protected Sanduiches(String um, String dois, String tres, String quatro) {
+		this.ingrediente1 = um;
+		this.ingrediente2 = dois;
+		this.ingrediente3 = tres;
+		this.ingrediente4 = quatro;
+	}
+	
+}

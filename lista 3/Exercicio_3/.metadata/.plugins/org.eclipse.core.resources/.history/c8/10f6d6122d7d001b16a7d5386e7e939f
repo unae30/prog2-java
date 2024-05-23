@@ -1,0 +1,27 @@
+package ex3;
+
+public class teste {
+
+	public static void main(String[] args) {
+		Elevador e1 = new Elevador(3,4);
+		e1.Entra();
+		e1.Entra();
+		e1.Entra();
+		System.out.println(e1.getPessoasPresentesNoElevador());
+		e1.Entra();
+		System.out.println(e1.getPessoasPresentesNoElevador());
+		e1.Sobe();
+		System.out.println(e1.getAndarAtual());
+		e1.Desce();
+		e1.Desce();
+		e1.Sobe();
+		e1.Sobe();
+		e1.Sobe();
+		e1.Sobe();
+		System.out.println(e1.getAndarAtual());
+		e1.Sobe();
+		System.out.println(e1.getAndarAtual());
+		
+	}
+
+}

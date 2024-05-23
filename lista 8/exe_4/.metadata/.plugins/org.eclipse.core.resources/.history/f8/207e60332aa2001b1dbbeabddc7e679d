@@ -1,0 +1,5 @@
+package lanchonete;
+
+public abstract class FabricaAbstrataDeSanduiches {
+	public abstract Sanduiches FactorySanduiches(String nomeDoSanduiche);
+}

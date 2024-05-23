@@ -1,0 +1,12 @@
+package ex3;
+
+public class teste {
+
+	public static void main(String[] args) {
+		Elevador e1 = new Elevador(9,4);
+		e1.Entra();
+		e1.Entra();
+		System.out.println(e1.getPessoasPresentesNoElevador());
+	}
+
+}

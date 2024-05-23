@@ -1,0 +1,13 @@
+package exe10;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Calculator calculadora = new Calculator();
+		
+		System.out.println("Digite: \r\n 1- para divisão || 2 - para log10");
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package carr0s;
+
+public class Siena extends CarroSedan{
+
+	protected Siena() {
+		super("Siena");
+	}
+
+}

@@ -1,0 +1,34 @@
+package letrab;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Set<Produtos> produtos = new HashSet<Produtos>();
+		
+		Scanner sc1 = new Scanner(System.in);
+		
+		System.out.println("Cadastro de produtos: ");
+		System.out.println("ID: ");
+		String idAux = sc1.nextLine();
+		int id = Integer.valueOf(idAux);
+		System.out.println("Nome: ");
+		String nome = sc1.nextLine();
+		System.out.println("Preço: ");
+		double preco = sc1.nextDouble();
+		
+		Produtos produtoCadastrado = new Produtos (id, nome, preco);
+		produtos.add(produtoCadastrado);
+		
+		if(produtos.contains(produtoCadastrado)) {
+			System.out.println("Este produto ja foi cadastrado anteriormente.");
+		}
+		
+
+	}
+
+}

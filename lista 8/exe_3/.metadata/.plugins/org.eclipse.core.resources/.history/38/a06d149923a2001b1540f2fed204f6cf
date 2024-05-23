@@ -1,0 +1,14 @@
+package formasGeograficas;
+
+public class FormasGeometricasPlanas extends FabricaAbstrataDeFormasGeometricas{
+
+
+	public FormasGeometricas desenha(String nomeDaForma) {
+		
+		if(nomeDaForma.equals("Círculo"))
+			return new Circulo("Forma Geométrica Plana");
+		else if(nomeDaForma.equals("Quadrado"))
+			return 
+	}
+	
+}

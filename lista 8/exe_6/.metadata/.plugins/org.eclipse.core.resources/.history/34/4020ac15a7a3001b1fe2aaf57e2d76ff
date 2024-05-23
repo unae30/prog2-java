@@ -1,0 +1,5 @@
+package sandubao;
+
+public interface IPao {
+	public String tipo(String tipoDePao);
+}

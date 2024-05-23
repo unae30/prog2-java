@@ -1,0 +1,14 @@
+package exe9;
+
+import java.util.InputMismatchException;
+
+public class TesteException {
+	
+	public void someMethod() throws Exception{
+			someMethod2(); 
+	}
+	
+	public void someMethod2() throws Exception{
+		InputMismatchException e = new InputMismatchException("Opa, testando");
+	}
+}

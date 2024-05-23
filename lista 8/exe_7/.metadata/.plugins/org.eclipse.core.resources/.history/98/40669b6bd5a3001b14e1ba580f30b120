@@ -1,0 +1,5 @@
+package somador;
+
+public class SomadorEsperado{
+	int somaVetor(int [] vetor);
+}

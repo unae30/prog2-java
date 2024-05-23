@@ -1,0 +1,23 @@
+package exe8;
+
+import java.util.Scanner;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Divisao divisao = new Divisao();
+	
+		try {
+			divisao.setNum1(10);
+			divisao.setNum2(10);
+			System.out.println(divisao.resultado());
+		}catch(Exception e) {
+			System.out.println("ERRO INESPERADO!");
+		}
+		
+		
+
+	}
+	
+}

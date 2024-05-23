@@ -1,0 +1,11 @@
+package sandubao;
+
+public class Salada implements ISalada{
+
+	public String tipo;
+	@Override
+	public void tipo(String tipoDeSalada) {
+		return tipoDeSalada;
+	}
+
+}

@@ -1,0 +1,14 @@
+package principal;
+import formasGeometricas.*;
+public class TesteFormasGeometricas {
+
+	public static void main(String[] args) {
+
+
+		FabricaAbstrataDeFormasGeometricas formas = new FormasGeometricasPlanas("Círculo");
+		FabricaAbstrataDeFormasGeometricas formas = new FormasGeometricasPlanas("Quadrado");
+		FabricaAbstrataDeFormasGeometricas formas = new FormasGeometricasPlanas("Retângulo");
+		FabricaAbstrataDeFormasGeometricas formas = new FormasGeometricasPlanas("Triângulo");
+	}
+
+}

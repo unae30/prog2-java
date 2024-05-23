@@ -1,0 +1,17 @@
+package exe3;
+
+public class DiscoOtico extends Dispositivo {
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double capacidadeEmMegabytes() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

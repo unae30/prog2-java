@@ -1,0 +1,15 @@
+package formasGeograficas;
+
+public class Triangulo extends FormasGeometricas{
+	
+	private String tipoDeDesenho;
+	
+	protected Triangulo() {
+		super("Triângulo");
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "-" + this.tipoDeDesenho;
+	}
+}

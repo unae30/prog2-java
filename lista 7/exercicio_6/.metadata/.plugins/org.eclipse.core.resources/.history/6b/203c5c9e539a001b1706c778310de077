@@ -1,0 +1,19 @@
+package exe6;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Conta minhaConta = new Conta();
+		minhaConta.deposita(100);
+		minhaConta.setLimite(100);
+		try {
+		minhaConta.saca(100);
+		}catch(ContaExcecao e) {
+			System.out.println("Não foi possível, o seu limite está abaixo do valor de saque");
+		}
+		minhaConta.imprimeExtrato();
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package exe10;
+
+public class Exception extends InvalidOperationException{
+	
+	private String mensagem;
+	
+	public Exception (String msg) {
+		this.mensagem = msg;
+	}
+	
+	public String getMensagem() {
+		return this.mensagem;
+	}
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 4\Exercicio_3\.metadata\.plugins\org.eclipse.jdt.core
+3015455432.index
+885383755.index

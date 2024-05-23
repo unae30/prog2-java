@@ -1,0 +1,19 @@
+package sandubao;
+
+public class SanduichesIngredientFactoryJP implements ISanduichesIngredientFactory{
+
+	Pao pao;
+	Presunto presunto;
+	Queijo queijo;
+	Salada salada;
+	
+	@Override
+	public void ingredientes(IPao pao, IQueijo queijo, IPresunto presunto, ISalada salada) {
+		System.out.println("INGREDIENTES: " + pao.tipo("Pão Francês") + "\r\n" + queijo.tipo("Mussarela") + "\r\n" + 
+				presunto.tipo("Presunto de Frango") + "\r\r" + salada.tipo("Salada com verdura"));
+		
+	}
+
+	
+
+}

@@ -1,0 +1,12 @@
+package sandubao;
+
+public class Pao implements IPao{
+
+	public String tipo;
+	
+	@Override
+	public void tipo(String tipoDePao) {
+		this.tipo = tipoDePao;
+	}
+
+}

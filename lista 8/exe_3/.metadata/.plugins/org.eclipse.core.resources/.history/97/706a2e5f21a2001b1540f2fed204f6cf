@@ -1,0 +1,8 @@
+package formasGeograficas;
+
+public class Circulo extends FormasGeometricas{
+	
+	protected Circulo() {
+		super("Circulo");
+	}
+}

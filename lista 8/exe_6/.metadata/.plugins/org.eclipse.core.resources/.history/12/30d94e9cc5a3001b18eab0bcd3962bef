@@ -1,0 +1,6 @@
+package sandubao;
+
+
+public abstract class FabricaAbstrataDeSanduiches {
+	public abstract ISanduiches FactorySanduiche(String nomeLanchonete);
+}

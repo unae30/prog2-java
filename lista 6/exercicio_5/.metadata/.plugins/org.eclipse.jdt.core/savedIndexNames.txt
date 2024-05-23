@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 6\EXERCICIO_6_ESPELHO\.metadata\.plugins\org.eclipse.jdt.core
+602058959.index
+3015455432.index

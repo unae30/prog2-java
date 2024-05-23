@@ -1,0 +1,21 @@
+package lanchonete;
+
+public class Sanduiches {
+	
+	private String nome;
+
+	protected Sanduiches(String nome) {
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	
+	@Override
+	public String toString() {
+		return "SANDUÍCHE: " + this.nome; 
+	}
+	
+}

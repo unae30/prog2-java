@@ -1,0 +1,11 @@
+package sandubao;
+
+public class SanduichesIngredientFactoryRT implements ISanduichesIngredientFactory{
+
+	@Override
+	public void ingredientes() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

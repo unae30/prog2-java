@@ -1,0 +1,9 @@
+package carr0s;
+
+public class Palio extends CarroPopular{
+
+	protected Palio() {
+		super("Pálio");
+	}
+
+}

@@ -1,0 +1,9 @@
+package carr0s;
+
+public class FiestaSedan extends CarroSedan{
+
+	protected FiestaSedan() {
+		super("Fiesta Sedan");
+	}
+
+}

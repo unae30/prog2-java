@@ -1,0 +1,88 @@
+package calculadora;
+
+public class Calculadora {
+	
+	private double num1, num2;
+	private double soma;
+	private double subtracao;
+	private double divisao;
+	private double multiplicacao;
+	
+
+		public void setNum1(double num1) {
+			this.num1 = num1;
+		}
+		
+		public double getNum1() {
+			return this.num1;
+		}
+		
+		public void setNum2(double num2) {
+			this.num2 = num2;
+		}
+		
+		public double getNum2() {
+			return this.num2;
+		}
+		
+		public void setSoma(double soma) {
+			this.soma = soma;
+		}		
+		
+		public double getSoma() {
+			return this.soma;
+		}
+		
+		public void setSubtracao(double subtracao) {
+			this.subtracao = subtracao;
+		}		
+		
+		public double getSubtracao() {
+			return this.subtracao;
+		}
+		
+		public void setMultiplicacao(double multiplicacao) {
+			this.multiplicacao = multiplicacao;
+		}		
+		
+		public double getMultiplicacao() {
+			return this.multiplicacao;
+		}
+		
+		public void setDivisao(double divisao) {
+			this.divisao = divisao;
+		}		
+		
+		public double getDivisao() {
+			return this.divisao;
+		}
+		
+		//operações
+		
+		public void Soma(double num1, double num2) {
+			double soma = num1 + num1;
+			this.soma = soma;
+		}
+		
+		public void Subtracao(double num1, double num2) {
+			double subtracao = num1 - num1;
+			this.subtracao = subtracao;
+		}
+		
+		public void Multiplicacao(double num1, double num2) {
+			double multiplicacao = num1 + num1;
+			this.multiplicacao = multiplicacao;
+		}
+		
+		public void Divisao(double num1, double num2) {
+			if (num1 < num2) {
+				System.out.println("Inválida");
+			}
+			else {
+				
+				double divisao = num1 / num2;
+				this.divisao = divisao;
+			}
+			
+		}
+}

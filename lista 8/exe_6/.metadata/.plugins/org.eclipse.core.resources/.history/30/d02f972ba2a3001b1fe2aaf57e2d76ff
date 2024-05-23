@@ -1,0 +1,10 @@
+package sandubao;
+
+public class SanduichesIngredientFactoryCG implements ISanduichesIngredientFactory {
+
+	@Override
+	public void ingredientes() {
+		System.out.println("Ingredientes: 2 fatias de pães (Integral), 1 fatia de queijo (Prato), 1 fatia de presunto(De frango) e salada (Sem verdura)");		
+	}
+	
+}

@@ -1,0 +1,29 @@
+package exercicio_4;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Cachorro c1 = new Cachorro("Bob");
+		Cachorro c2 = new Cachorro();
+		
+		Gato g1 = new Gato("Lucy");
+		Gato g2 = new Gato();
+		
+		c1.late();
+		g1.mia();
+		c1.caminha();
+		g1.caminha();
+		
+		System.out.println();
+		
+		c2.late();
+		g2.mia();
+		c2.caminha();
+		g2.caminha();
+		
+		
+
+	}
+
+}

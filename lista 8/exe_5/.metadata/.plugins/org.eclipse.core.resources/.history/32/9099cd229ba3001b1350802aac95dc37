@@ -1,0 +1,13 @@
+package carr0s;
+
+public class TesteFabricaDeCarros {
+
+	public static void main(String[] args) {
+		
+		FabricaAbstrataDeCarros automovel = new FabricaFord();
+		CarroPopular carro1 = automovel.FactoryCarroPopular("Fiesta");
+		System.out.println(carro1);
+
+	}
+
+}

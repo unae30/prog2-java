@@ -1,0 +1,19 @@
+package carr0s;
+
+public class CarroPopular {
+	
+	private String tipo;
+	
+	protected CarroPopular(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	public String getTipo() {
+		return this.tipo;
+	}
+	
+	@Override
+	public String toString() {
+		return "CARRO POPULAR: " + this.tipo;
+	}
+}

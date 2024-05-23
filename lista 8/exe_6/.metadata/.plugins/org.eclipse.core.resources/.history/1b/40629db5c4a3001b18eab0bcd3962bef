@@ -1,0 +1,5 @@
+package sandubao;
+
+public class QueijoPrato implements IQueijo{
+
+}

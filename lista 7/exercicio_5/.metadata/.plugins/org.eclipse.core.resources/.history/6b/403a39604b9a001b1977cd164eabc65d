@@ -1,0 +1,26 @@
+package exe5;
+
+import java.util.Scanner;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		int y = 0;
+		double r = 0;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Eu sei dividir!");
+		System.out.println("Informe o primeiro valor: ");
+		try {
+		x = teclado.nextInt();
+		}catch (Exception inputMismatchException) {
+			System.out.println("ERRO: O número de ser um inteiro!");
+		}
+		System.out.println("Informe o segundo valor: ");
+		y = teclado.nextInt();
+		r = (x/y);
+		System.out.println("O resultado da soma é: " + r);
+	}
+
+}

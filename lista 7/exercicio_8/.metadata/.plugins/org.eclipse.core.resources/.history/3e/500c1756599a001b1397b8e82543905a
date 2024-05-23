@@ -1,0 +1,24 @@
+package exe8;
+
+import java.util.InputMismatchException;
+
+public class Divisao {
+	 
+	public double resultado(int num1, int num2) throws ArithmeticException{
+		if(num2 == 0) {
+			ArithmeticException a = new ArithmeticException();
+			throw a;
+		}
+		
+			try {
+				double r = (num1/num2);
+				return r;
+			}catch (InputMismatchException e) {
+				System.out.println("ERRO: Entrada de dados inválida! "
+						+ "O número tem de ser um inteiro!");
+				return 0;
+			}	
+	}
+	
+
+}

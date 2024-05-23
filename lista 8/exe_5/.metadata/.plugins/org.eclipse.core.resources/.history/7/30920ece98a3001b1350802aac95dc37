@@ -1,0 +1,16 @@
+package carr0s;
+
+public class FabricaFiat extends FabricaAbstrataDeCarros{
+
+	@Override
+	public CarroPopular FactoryCarroPopular(String nome) {
+
+	}
+
+	@Override
+	public CarroSedan FactoryCarroSedan(String nome) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

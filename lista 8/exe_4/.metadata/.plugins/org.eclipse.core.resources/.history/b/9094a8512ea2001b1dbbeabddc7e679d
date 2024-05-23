@@ -1,0 +1,11 @@
+package lanchonete;
+
+public class LanchoneteCG extends FabricaAbstrataDeSanduiches {
+
+	@Override
+	public Sanduiches FactorySanduiches(String nomeDoSanduiche) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+package sandubao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FabricaAbstrataDeSanduiches lanches = new Lanchonete();
+		lanches.FactorySanduiche("Lanchonete CG");
+		System.out.println(lanches);
+		
+		
+		
+
+	}
+
+}

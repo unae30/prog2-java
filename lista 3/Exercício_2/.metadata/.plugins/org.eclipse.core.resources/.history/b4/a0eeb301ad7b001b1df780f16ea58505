@@ -1,0 +1,21 @@
+package matriz;
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		
+	Matriz teste = new Matriz (2,3);
+		
+		 
+				 
+			teste.informeNumColunas();
+			teste.informeNumLinhas();
+			
+			System.out.println("Preencha a matriz");
+			teste.preencheMatriz();
+			
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package sandubao;
+
+import ISanduichesIngredientsFactory;
+
+public class SanduichesIngredientsFactoryCG extends ISanduichesIngredientsFactory {
+
+}

@@ -1,0 +1,47 @@
+package exe3;
+
+public class Pedido {
+	private float valor_total;
+	private ItemPedido item_pedido;
+
+	
+	
+	public Pedido(int quantidade, Produto produto) {
+
+		this.item_pedido = new ItemPedido (quantidade, produto);
+		
+	}
+
+	public float getValor_total() {
+		return valor_total;
+	}
+
+	public void setValor_total(float valor_total) {
+		this.valor_total = valor_total;
+	}
+	
+	public ItemPedido getItem_pedido() {
+		return item_pedido;
+	}
+	public void setItem_pedido(ItemPedido item_pedido) {
+		this.item_pedido = item_pedido;
+	}
+	
+	ItemPedido [] itensAdicionados = new ItemPedido[3];
+	
+	public void adicionar_item( ItemPedido item_pedido) {
+		for(int i = 0; i < 3; i++) {
+			itensAdicionados[i] = item_pedido;			
+		}
+	}
+	
+	public float obter_valor() {
+		float valorFinal = 0;
+		for(int i = 0; i < 3; i++) {
+			
+			float aux =	itensAdicionados[i].getProduto().getValor() * itensAdicionados[i].getQuantidade();
+			valorFinal += aux;			
+		}
+		return valorFinal;
+	}
+}

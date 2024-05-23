@@ -1,0 +1,42 @@
+package exe6;
+
+public class Conta {
+	
+	private double total = 0;
+	private double limite;
+	
+	public double getTotal() {
+		return total;
+	}
+
+	public void setTotal(double total) {
+		this.total = total;
+	}
+	
+	public double getLimite() {
+		return limite;
+	}
+	
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	
+	// metodos
+	public void deposita(double valor) {
+		this.total = valor;
+	}
+	
+	public void saca(double valor) throws ContaExcecao{
+		if(valor > this.limite) {
+			ContaExcecao e = new ContaExcecao("O valor de saque nao corresponde ao limite");
+			throw e;
+		}
+		setTotal((total-valor));
+	}
+	
+	public void imprimeExtrato(){
+		System.out.println("Saldo em conta: " + this.total);
+		System.out.println("Limite: " + this.limite);		
+	}
+}

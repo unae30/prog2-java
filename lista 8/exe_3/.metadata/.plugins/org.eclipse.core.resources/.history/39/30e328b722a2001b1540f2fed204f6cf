@@ -1,0 +1,8 @@
+package formasGeograficas;
+
+public class Triangulo extends FormasGeometricas{
+	
+	protected Triangulo() {
+		super("Triângulo");
+	}
+}

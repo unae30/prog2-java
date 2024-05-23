@@ -1,0 +1,16 @@
+package lanchonete;
+
+public class SanduicheLanchoneteRT extends Sanduiches {
+
+private String detalhesDosIngredientes; 
+	
+	protected SanduicheLanchoneteRT(String nome, String detalhes) {
+		super("LanchoneteRT");
+		this.detalhesDosIngredientes = detalhes;
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.detalhesDosIngredientes;
+	}
+}

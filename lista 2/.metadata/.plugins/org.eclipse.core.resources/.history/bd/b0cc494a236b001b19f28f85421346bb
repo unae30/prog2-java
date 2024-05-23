@@ -1,0 +1,53 @@
+package calculadora;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Calculadora calcula = new Calculadora();
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("-----CALCULADORA-----");
+		System.out.println("Digite o 1º número:");
+		double numero1= sc.nextDouble();
+		System.out.println("Digite o 2º numero:");
+		double numero2= sc.nextDouble();
+		
+		System.out.println("Agora escola qual operação deseja realizar:");
+		System.out.println("[1] - PARA SOMAR");
+		System.out.println("[2] - PARA SUBTRAIR");
+		System.out.println("[3] - PARA MULTIPLICAR");
+		System.out.println("[4] - PARA DIVDIR");
+		
+		int digito = sc.nextInt();
+		
+		switch(digito) {
+		
+		case 1 :
+			System.out.println(calcula.Soma(numero1, numero2));
+			break;
+			
+		case 2: 
+			System.out.println(calcula.Subtracao(numero1, numero2));
+			break;
+		case 3: 
+			System.out.println(calcula.Multiplicacao(numero1, numero2));
+			break;
+		case 4: 
+			if(numero1 > numero2) {
+			System.out.println(calcula.Divisao(numero1, numero2));
+			break;
+			}
+			else {
+				System.out.println("Operação inválida");
+				break;
+			}
+		
+		}
+		
+	
+	}
+
+}

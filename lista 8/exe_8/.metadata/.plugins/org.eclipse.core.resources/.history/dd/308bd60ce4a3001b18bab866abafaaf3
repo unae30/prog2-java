@@ -1,0 +1,10 @@
+
+
+public class MedidorCelsius implements MedidorCelsiusIF{
+
+	@Override
+	public double medirTemperatura() {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package sandubao;
+
+public interface ISanduichesIngredientFactoryJP {
+	public void ingredientes();
+}

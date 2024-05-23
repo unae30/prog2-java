@@ -1,0 +1,26 @@
+package sandubao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FabricaAbstrataDeSanduiche sandubao = Lanchonete.GetFactory("Sanduiches");	
+		ISanduiches sanduiche = sandubao.getSanduiches("Lanchonete CG");
+		sanduiche.ingredientes();
+		
+		IPao pao = sandubao.getPao("Integral");
+		pao.tipo();
+		
+//		IPresunto presunto = sandubao.getPresunto("Frango");
+//		presunto.tipo();
+//		
+//		IQueijo queijo = sandubao.getQueijo("Mussarela");
+//		queijo.tipo();
+//		
+//		ISalada salada = sandubao.getSalada("Sem verdura");
+//		salada.tipo();
+		
+
+	}
+
+}

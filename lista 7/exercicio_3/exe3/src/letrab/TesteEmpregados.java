@@ -1,0 +1,79 @@
+package letrab;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+//No sistema de uma empresa, cada empregado possui um ID, nome, salario e data em que
+//ele foi contratado. Crie uma classe de testes para seu programa, o teste deve conter um
+//ArrayList de empregados e implementar as seguintes funcionalidades:
+//ii) ordenar os funcionarios em ordem alfabetica;
+
+
+
+public class TesteEmpregados {
+
+	public static void main(String[] args) {
+			
+	List<Empregado> listaDeEmpregados = new ArrayList<Empregado>();
+	DataComparator dataC = new DataComparator();
+	SalarioComparator salarioC = new SalarioComparator();
+	NomeComparator nomeC = new NomeComparator();
+	
+	Empregado e1 = new Empregado("001", "Paulo", 14000.00, "2020-11-20");
+	Empregado e2 = new Empregado("002", "Rafael", 14055.00, "2020-10-20");
+	Empregado e3 = new Empregado("003", "Fernando", 14002.00, "2020-09-20");
+	Empregado e4 = new Empregado("004", "Rafaela", 14001.00, "2020-08-20");
+	Empregado e5 = new Empregado("005", "Maria", 14056.00, "2020-07-20");
+	
+	listaDeEmpregados.add(e1);
+	listaDeEmpregados.add(e2);
+	listaDeEmpregados.add(e3);
+	listaDeEmpregados.add(e4);
+	listaDeEmpregados.add(e5);
+	
+	System.out.println("------------------------------------------");
+	System.out.println("Empregados em ordem crescente de salários");
+	System.out.println("------------------------------------------");
+	Collections.sort(listaDeEmpregados); 
+	imprimeLista(listaDeEmpregados);
+	
+	System.out.println("------------------------------------------");
+	System.out.println("Empregados em ordem alfabética");
+	System.out.println("------------------------------------------");
+	Collections.sort(listaDeEmpregados, nomeC);
+	imprimeLista(listaDeEmpregados);
+	
+	
+	Empregado recebeMenos = Collections.min(listaDeEmpregados, salarioC);
+	Empregado recebeMais = Collections.max(listaDeEmpregados, salarioC);
+	
+	System.out.println("------------------------------------------");
+	System.out.println("Menor salário: ");
+	System.out.println("------------------------------------------");
+	System.out.println(recebeMenos.toString());
+	System.out.println("------------------------------------------");
+	System.out.println("Maior salário: ");
+	System.out.println("------------------------------------------");
+	System.out.println(recebeMais.toString());
+	
+	
+	Empregado maisVelho = Collections.min(listaDeEmpregados, dataC);
+	Empregado maisNovo = Collections.max(listaDeEmpregados, dataC);
+	
+	System.out.println("------------------------------------------");
+	System.out.println("Empregado menos experiente:");
+	System.out.println("------------------------------------------");
+	System.out.println(maisNovo.toString());
+	System.out.println("------------------------------------------");
+	System.out.println("Empregado mais experiente:");
+	System.out.println("------------------------------------------");
+	System.out.println(maisVelho.toString());	
+	
+	}
+	public static void imprimeLista(List <Empregado> lista) {
+		for(int i = 0; i < lista.size(); i++) {
+			System.out.println(lista.get(i));
+		}
+	}
+}

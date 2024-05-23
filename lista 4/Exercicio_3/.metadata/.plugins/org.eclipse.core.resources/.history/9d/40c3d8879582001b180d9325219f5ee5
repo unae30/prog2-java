@@ -1,0 +1,11 @@
+package exe3;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto(001, 30, "Sabonete");
+		Produto p2 = new Produto(002, 35, "Shampoo");
+	}
+
+}

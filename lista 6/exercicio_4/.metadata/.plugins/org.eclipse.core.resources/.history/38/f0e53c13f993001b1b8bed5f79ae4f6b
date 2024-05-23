@@ -1,0 +1,60 @@
+package exe4;
+import java.util.Scanner;
+
+public class DVD extends Midia {
+	
+	private int nFaixas;
+	
+
+	public DVD() {};
+	
+	public DVD(int c, double p, String s, int f) {
+		super(c,p,s);
+		this.nFaixas = f;
+	}
+	
+	//métodos abstratos da classe pai
+
+	@Override
+	public String getTipo() {
+		return super.getTipo();
+	}
+
+	@Override
+	public String getDetalhes() {
+		super.getDetalhes();
+		String infoDVD = ("NÚMERO DE FAIXAS : " + this.nFaixas);
+		return infoDVD + this.setFaixas(this.nFaixas);
+		
+	}
+
+	Scanner sc1 = new Scanner (System.in);
+	
+	@Override
+	public void inserirDados() {
+		super.inserirDados();
+		System.out.println("NÚMERO DE FAIXAS: ");
+		String faixas = sc1.nextLine();
+		this.nFaixas = Integer.parseInt(faixas);
+	}
+	
+	@Override
+	public void printDados() {
+		super.printDados();
+		System.out.println(getDetalhes());
+	}
+	
+	public String setFaixas(int f) {
+		System.out.println("Deseja reproduzir faixas? 1-SIM // 2-NÃO");
+		int aux = sc1.nextInt();
+		
+		if(aux == 1) {
+			System.out.println("Qual faixa deseja reproduzir? ");
+			int aux2 = sc1.nextInt();
+			String reproducao = ("Reproduzindo faixa " +aux2);
+			return reproducao;
+		}else {
+			return "Não reproduzindo...";
+		}
+	}
+}

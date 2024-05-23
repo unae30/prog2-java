@@ -1,0 +1,72 @@
+package exe1;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+	Set<String> nomes = new HashSet <String>();
+	
+	Scanner sc = new Scanner(System.in);
+	int numeroAuxiliar;
+	
+	do {
+		
+	System.out.println("----------------MENU-----------------");
+	System.out.println("- 1: Adicionar nomes na lista       -");
+	System.out.println("- 2: Remover nome da lista          -");
+	System.out.println("- 3: Verificar nome na lista        -");
+	System.out.println("- 4: Apagar todos os nomes da lista -");
+	System.out.println("- 0: SAIR                           -");
+	System.out.println("-------------------------------------");
+	
+	String stringAuxiliar = sc.nextLine();
+	 numeroAuxiliar = Integer.valueOf(stringAuxiliar);
+	
+	
+		switch(numeroAuxiliar) {
+			case 1:
+				System.out.println("Quantos nomes deseja adicionar?");
+				String qtdAux = sc.nextLine();
+				int qtd = Integer.valueOf(qtdAux);
+				System.out.println("Digite os nomes: ");
+				for(int i=0; i<qtd; i++) {		
+					System.out.println("Digite o nome " + (i+1));
+					String nomeAux = sc.nextLine();
+					nomes.add(nomeAux);
+				}
+				break;		
+				
+			case 2:
+				System.out.println("Digite o nome que deseja remover da lista: ");
+				String nomeRemover = sc.nextLine();
+				try {
+					if(nomes.contains(nomeRemover) == true)
+						nomes.remove(nomeRemover);
+				}catch(Exception e){
+					System.out.println("Este nome não existe na lista.");
+				}
+				break;
+				
+			case 3: 
+				System.out.println("Qual nome deseja conferir? Digite abaixo: ");
+				String nomeReptido = sc.nextLine();
+				if(nomes.contains(nomeReptido) == true)
+					System.out.println("Nome ja existe na lista.");
+				else
+					System.out.println("Nome inexistente na lista.");
+				break;
+				
+			case 4:
+				System.out.println("Tem certeza que deseja apagar todos os nomes da lista?");
+				nomes.clear();
+				break;
+		}
+	}while(numeroAuxiliar != '5');
+
+
+	}
+}

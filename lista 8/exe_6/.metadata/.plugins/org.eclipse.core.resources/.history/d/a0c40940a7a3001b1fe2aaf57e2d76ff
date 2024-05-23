@@ -1,0 +1,10 @@
+package sandubao;
+
+public class Queijo implements IQueijo{
+
+	@Override
+	public String tipo(String tipoDeQueijo) {
+		return tipoDeQueijo;
+	}
+
+}

@@ -1,0 +1,17 @@
+package exe8;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		Divisao divisao = new Divisao();
+		
+		try {
+			divisao.setNum1(10.3);
+			divisao.setNum2(2);
+			System.out.println(divisao.resultado());
+		}catch(ArithmeticException a) {
+			System.out.println("O denominador nao pode ser 0.");
+		}
+	}
+	
+}

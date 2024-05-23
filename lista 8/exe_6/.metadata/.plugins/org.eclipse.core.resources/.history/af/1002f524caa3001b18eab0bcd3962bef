@@ -1,0 +1,14 @@
+package sandubao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FabricaAbstrataDeSanduiche sandubao = Lanchonete.GetFactory("Sanduiches");	
+		ISanduiches sanduiche = sandubao.getSanduiches("Lanchonete CG");
+		sanduiche.ingredientes();
+		
+
+	}
+
+}

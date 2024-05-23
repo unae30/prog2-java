@@ -1,0 +1,5 @@
+package sandubao;
+
+public interface ISanduichesIngredientFactory {
+	public void ingredientes(IPao pao, IQueijo queijo, IPresunto presunto, ISalada salada);
+}

@@ -1,0 +1,20 @@
+package ex1;
+
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Empregado e1 = new Empregado("Unaê", 2000.00);
+		
+		e1.printInfo();
+		
+		e1.promoção(0.6);
+		
+		e1.adicionaGratificação();
+		
+		e1.printInfo();
+
+	}
+
+}

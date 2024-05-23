@@ -1,0 +1,15 @@
+package formasGeograficas;
+
+public class Quadrado extends FormasGeometricas {
+	
+	private String tipoDeDesenho;
+	
+	protected Quadrado() {
+		super("Quadrado");
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "-" + this.tipoDeDesenho;
+	}
+}

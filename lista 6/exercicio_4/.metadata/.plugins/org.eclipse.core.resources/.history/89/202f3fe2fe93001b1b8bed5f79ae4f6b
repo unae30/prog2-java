@@ -1,0 +1,18 @@
+package exe4;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Cadastrando CD...");
+		
+		Midia midia = new DVD();
+		
+		((DVD)midia).inserirDados();
+		((DVD)midia).printDados();
+		
+		
+		
+	}
+
+}

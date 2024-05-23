@@ -1,0 +1,62 @@
+package letrab;
+
+import java.time.LocalDate;
+
+public class Empregado implements Comparable <Empregado>{
+	
+	private String ID;
+	private String nome;
+	private double salario;
+	private String data;
+	
+	public Empregado(String ID, String nome, double salario, String data) {
+		this.ID = ID;
+		this.nome = nome;
+		this.salario = salario; 
+		this.data = LocalDate.parse(data);
+	}
+	
+	
+	public String getID() {
+		return ID;
+	}
+	
+	public void setID(String iD) {
+		ID = iD;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public void setData(String data) {
+		this.data = data;
+	}
+
+
+	@Override
+	public int compareTo(Empregado e) {
+		if(this.salario < e.salario)
+			return -1;
+		if(this.salario > e.salario)
+			return 1;		
+		return 0;
+	}
+
+}

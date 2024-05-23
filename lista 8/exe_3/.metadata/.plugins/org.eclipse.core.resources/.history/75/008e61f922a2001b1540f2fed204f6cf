@@ -1,0 +1,15 @@
+package formasGeograficas;
+
+public class Circulo extends FormasGeometricas{
+	
+	private String tipoDeDesenho;
+	
+	protected Circulo() {
+		super("Círculo");
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "-" + this.tipoDeDesenho;
+	}
+}

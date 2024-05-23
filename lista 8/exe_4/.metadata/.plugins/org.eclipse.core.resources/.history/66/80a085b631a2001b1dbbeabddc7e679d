@@ -1,0 +1,11 @@
+package lanchonete;
+
+public class SanduicheLanchoneteJP extends Sanduiches {
+
+	private String detalhesDosIngredientes; 
+	
+	protected SanduicheLanchoneteJP(String nome, String detalhes) {
+		super("LanchoneteJP");
+		this.detalhesDosIngredientes = detalhes;
+	}
+}

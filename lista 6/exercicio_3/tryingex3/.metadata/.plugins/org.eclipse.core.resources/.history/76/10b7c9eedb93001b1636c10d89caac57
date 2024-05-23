@@ -1,0 +1,22 @@
+package exe3;
+
+
+public class DiscoOtico extends Dispositivo {
+
+	public DiscoOtico(String nome, long c) {
+		super("Disco tico", 241172480L);
+	}
+	
+	@Override
+	public String toString(String nome, long c) {
+		return "Dispositivo: " + super.getNome() + "Capacidade: " + super.getCapacidadeEmBytes();
+	}
+
+	@Override
+	public double capacidadeEmMegabytes() {
+		double kilobytes = this.getCapacidadeEmBytes() / 1024;
+		double megabytes = kilobytes / 1024;
+		return megabytes;
+	}
+
+}

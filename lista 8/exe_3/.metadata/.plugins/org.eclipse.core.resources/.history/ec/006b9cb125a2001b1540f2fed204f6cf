@@ -1,0 +1,16 @@
+package formasGeometricas;
+
+public class Retangulo extends FormasGeometricas{
+	
+	private String tipoDeDesenho;
+	
+	protected Retangulo(String x) {
+		super("Retângulo");
+		this.tipoDeDesenho = x;
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "-" + this.tipoDeDesenho;
+	}
+}

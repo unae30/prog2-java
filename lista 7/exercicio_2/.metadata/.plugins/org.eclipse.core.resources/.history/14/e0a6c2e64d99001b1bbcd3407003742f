@@ -1,0 +1,32 @@
+package exe2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TesteMap {
+
+	public static void main(String[] args) {
+		
+		Map<String, Empregado> map = new HashMap<String, Empregado>();
+		
+		Empregado e1 = new Empregado ("a1234", "Steve Jobs");
+		Empregado e2 = new Empregado ("a1235", "Scott McNealy");
+		Empregado e3 = new Empregado ("a1236", "Jeff Bezos");
+		Empregado e4 = new Empregado ("a1237", "Larry Ellison");
+		Empregado e5 = new Empregado ("a1238", "Bill Gates");
+		Empregado e6 = new Empregado ();
+		
+		map.put(e1.getID(), e1);
+		map.put(e2.getID(), e2);
+		map.put(e3.getID(), e3);
+		map.put(e4.getID(), e4);
+		map.put(e5.getID(), e5);
+		map.put(e6.getID, e6);
+		
+		
+	
+		
+
+	}
+
+}

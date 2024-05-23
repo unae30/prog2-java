@@ -1,0 +1,29 @@
+package exe4;
+
+public class DVD extends Midia {
+
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDetalhes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void inserirDados() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void printDados() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

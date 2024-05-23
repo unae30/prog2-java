@@ -1,0 +1,21 @@
+package ex1;
+
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Empregado e1 = new Empregado("Unaê", 2000.00);
+		
+		e1.printInfo();
+		
+		System.out.println("Adicione o percentual de aumento salarial ao empregado:");
+//		e1.promoção();
+		
+		e1.adicionaGratificação(67.00);
+		
+		e1.printInfo();
+
+	}
+
+}

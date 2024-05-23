@@ -1,0 +1,67 @@
+package letrab;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Set<Produtos> produtos = new HashSet<Produtos>();
+		
+		Scanner sc1 = new Scanner(System.in);
+		
+		int aux;
+		
+		do {
+			
+			System.out.println("----------------MENU-----------------");
+			System.out.println("- 1: Cadastrar Produtos             -");
+			System.out.println("- 2: Mostrar Produtos Cadastrados   -");
+			System.out.println("- 3: Sair                           -");
+			System.out.println("-------------------------------------");
+			
+			String auxString = sc1.nextLine();
+			aux = Integer.parseInt(auxString);
+			switch(aux) {
+		
+			case 1:
+				System.out.println("Cadastro de produtos: ");
+				System.out.println("ID: ");
+				String idAux = sc1.nextLine();
+				int id = Integer.parseInt(idAux);
+				System.out.println("Nome: ");
+				String nome = sc1.nextLine();
+				System.out.println("Preço: ");
+				double preco = sc1.nextDouble();
+			
+				Produtos produtoCadastrado = new Produtos (id, nome, preco);
+				produtos.add(produtoCadastrado);
+		
+				if(produtos.contains(produtoCadastrado)) {
+					System.out.println("Este produto ja foi cadastrado anteriormente. "
+							+ "Aperte 1 para desfazer cadastro e 2 para continuar.");
+					String desfazerAux = sc1.nextLine();
+					int desfazer = Integer.parseInt(desfazerAux);
+					switch(desfazer) {
+					case 1: 
+						produtos.remove(produtoCadastrado);
+						break;
+					case 2:
+						break;
+					}
+				}
+				break;
+			case 2:
+				for(Produtos produtosImpressos: produtos) {
+					System.out.println(produtosImpressos.toString());
+				}
+			case 3: 
+				break;
+			default: 
+				System.out.println("Opção de menu inválida.");
+			}
+		}while(aux != 2);
+	}
+}

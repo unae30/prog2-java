@@ -1,0 +1,10 @@
+package graus;
+
+public class TesteMedidorAdapter {
+	
+	MedidorFarenheit grausBrasil = new MedidorFarenheit();
+	AdapterMedidaDeTemperatura conversor = new AdapterMedidaDeTemperatura(grausBrasil);
+	
+	grausBra
+	
+}

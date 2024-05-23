@@ -1,0 +1,19 @@
+package lanchonete;
+
+public class Lanchonetes extends FabricaAbstrataDeSanduiches {
+
+	@Override
+	public Sanduiches FactorySanduiches(String nomeDaLanchonete) {
+		if(nomeDaLanchonete.equals("Lanchonete CG"))
+			return new SanduicheLanchoneteCG("DETALHES: Pão integral, Queijo prato, Presunto de frango, Salada sem verdura.");
+		else if(nomeDaLanchonete.equals("Lanchonete JP"))
+			return new SanduicheLanchoneteJP("DETALHES: Pão francês, Queijo mussarela, Presunto de frango, Salada com verdura.");
+		else if(nomeDaLanchonete.equals("Lanchonete RT"))
+			return new SanduicheLanchoneteRT("DETALHES: Pão bola, Queijo cheddar, Presunto de peru, Salada sem verdura.");
+		else
+			return new Sanduiches(nomeDaLanchonete);
+	}
+	
+
+
+}

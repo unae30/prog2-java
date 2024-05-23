@@ -1,0 +1,16 @@
+package exe8;
+
+import java.util.Scanner;
+
+public class Controlador {
+
+	public static void main(String[] args) {
+		
+		Divisao divisao = new Divisao();
+		
+		
+		
+
+	}
+	
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 3\tp03\Exercicio_4"/>
+			<item value="C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 3\Exercicio_4"/>
+			<item value="C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 4\tp04\Exercicio_4"/>
+			<item value="C:\Users\User\Documents\UFOP\20.1\PROG2\LISTA\lista 4\Exercicio_4"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+package letrab;
+
+public class Empregado implements Comparable <Empregado>{
+
+	@Override
+	public int compareTo(Empregado arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

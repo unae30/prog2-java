@@ -1,0 +1,5 @@
+package formasGeograficas;
+
+public abstract class FabricaAbstrataDeFormasGeometricas {
+	public abstract FormasGeometricas desenha(String nomeDaForma);
+}

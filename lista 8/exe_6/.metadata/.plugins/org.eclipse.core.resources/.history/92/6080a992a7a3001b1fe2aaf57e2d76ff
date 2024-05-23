@@ -1,0 +1,15 @@
+package sandubao;
+
+public class SanduichesIngredientFactoryCG implements ISanduichesIngredientFactory {
+
+	Pao pao;
+	Presunto presunto;
+	Queijo queijo;
+	Salada salada;
+	
+	@Override
+	public void ingredientes() {
+		System.out.println("INGREDIENTES: " + pao.tipo("Pão Integral") + "\r\n" + queijo.tipo("Queijo Prato") + "\r\n" + 
+	presunto.tipo("Presunto de Frango") + "\r\r" + salada.tipo("Salada sem verdura"));			
+	}
+}

@@ -1,0 +1,38 @@
+package lanchonete;
+
+public class Sanduiches {
+	
+	private String ingrediente1;
+	private String ingrediente2;
+	private String ingrediente3;
+	private String ingrediente4;
+	
+	protected Sanduiches() {
+		this.ingrediente1 = "2 fatias de pão";
+		this.ingrediente2 = "1 fatia de Queijo";
+		this.ingrediente3 = "1 fatia de Presunto";
+		this.ingrediente4 = "Salada";
+	}
+
+	public String getIngrediente1() {
+		return ingrediente1;
+	}
+
+	public String getIngrediente2() {
+		return ingrediente2;
+	}
+
+	public String getIngrediente3() {
+		return ingrediente3;
+	}
+
+	public String getIngrediente4() {
+		return ingrediente4;
+	}
+	
+	@Override
+	public String toString() {
+		return "SANDUÍCHE: \r\n" + this.ingrediente1 + "\r\n" + this.ingrediente2 + "\r\n" + this.ingrediente3 + "\r\n" + this.ingrediente4;
+	}
+	
+}

@@ -1,0 +1,9 @@
+package carr0s;
+
+public class Fiesta extends CarroPopular {
+
+	protected Fiesta() {
+		super("Fiesta");
+	}
+
+}

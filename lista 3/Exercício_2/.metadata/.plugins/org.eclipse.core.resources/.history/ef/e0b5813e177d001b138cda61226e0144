@@ -1,0 +1,15 @@
+package matriz;
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Matriz m1 = new Matriz(2,3);
+		
+		m1.informeNumColunas();
+		m1.informeNumLinhas();
+		m1.preencheMatriz();
+
+	}
+
+}

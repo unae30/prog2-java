@@ -1,0 +1,10 @@
+package sandubao;
+
+public class Presunto implements IPresunto{
+
+	@Override
+	public String tipo(String tipoDePresunto) {
+		return tipoDePresunto;
+	}
+
+}
